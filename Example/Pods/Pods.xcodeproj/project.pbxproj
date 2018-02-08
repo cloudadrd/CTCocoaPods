@@ -12,7 +12,7 @@
 		790EA5B020AC2AE72E1804CF28FF9B4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7D5CE59DFB011AF9CA8656F055D2A245 /* CTCocoaPods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D82329BFE78B63064572B7753E370FC /* CTCocoaPods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AB2677B1A0AC076BAD9D299D0330AA4 /* CTCocoaPods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67237AF09934A0FA35CA3481DD21E3C8 /* CTCocoaPods-dummy.m */; };
-		C7F5F62C202C25F0009990EE /* CTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5F62B202C25F0009990EE /* CTSDK.framework */; };
+		C7F5F631202C26E7009990EE /* CTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5F630202C26E7009990EE /* CTSDK.framework */; };
 		F96A33D75A10BD3379FDB0C4D3B96BE7 /* Pods-CTCocoaPods_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8576370C06C1291F11A39AD94A96369C /* Pods-CTCocoaPods_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABF4D495FB96AC3A611B99572EDBC2EF /* CTCocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CTCocoaPods.modulemap; sourceTree = "<group>"; };
 		C0B22B7A54D8B73E57472877FAC4F210 /* Pods-CTCocoaPods_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTCocoaPods_Tests-resources.sh"; sourceTree = "<group>"; };
-		C7F5F62B202C25F0009990EE /* CTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTSDK.framework; path = ../CTCocoaPods/Frameworks/CTSDK.framework; sourceTree = "<group>"; };
+		C7F5F630202C26E7009990EE /* CTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTSDK.framework; path = ../CTCocoaPods/Frameworks/CTSDK.framework; sourceTree = "<group>"; };
 		DE8BF0C4E6AB9B99DD03C970881234BB /* CTCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BD0E5DF153663D9EEF0AEB7C95BF1B /* Pods_CTCocoaPods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTCocoaPods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FCBC95F5481B4ACC15BD0656686854 /* CTCocoaPods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTCocoaPods-prefix.pch"; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F5F62C202C25F0009990EE /* CTSDK.framework in Frameworks */,
 				790EA5B020AC2AE72E1804CF28FF9B4B /* Foundation.framework in Frameworks */,
+				C7F5F631202C26E7009990EE /* CTSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		5CAB82C4C728EF584386FA0FD9F21983 /* CTCocoaPods */ = {
 			isa = PBXGroup;
 			children = (
-				C7F5F628202C24DC009990EE /* Frameworks */,
+				C7F5F62D202C2686009990EE /* Frameworks */,
 				C25FAFA1D234CF4D09AF6C3CEEC0EC50 /* Pod */,
 				BE177FD758F154D12A50B5A6282D4563 /* Support Files */,
 			);
@@ -163,10 +163,10 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		C7F5F628202C24DC009990EE /* Frameworks */ = {
+		C7F5F62D202C2686009990EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7F5F62B202C25F0009990EE /* CTSDK.framework */,
+				C7F5F630202C26E7009990EE /* CTSDK.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
