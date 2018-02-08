@@ -25,7 +25,7 @@ Support CocoaPods
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tianwenshi' => 'lancelot.tian@yeahmobi.com' }
-  s.source           = { :git => 'https://github.com/cloudadrd/CTCocoaPods', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cloudadrd/CTCocoaPods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
