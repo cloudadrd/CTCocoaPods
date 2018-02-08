@@ -29,7 +29,7 @@ Support CocoaPods
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
-  s.vendored_frameworks = 'testCTPod/Frameworks/CTSDK.framework'
+  s.vendored_frameworks = 'CTCocoaPods/Frameworks/CTSDK.framework'
   #s.source_files = 'CTCocoaPods/Classes/**/*'
   
   # s.resource_bundles = {
