@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Support CocoaPods
                        DESC
 
-  s.homepage         = 'https://github.com/cloudmobi/CloudmobiSSP'
+  s.homepage         = 'https://github.com/cloudadrd/CTCocoaPods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tianwenshi' => 'lancelot.tian@yeahmobi.com' }
@@ -29,8 +29,8 @@ Support CocoaPods
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
-  s.vendored_frameworks = 'CTCocoaPods/Frameworks/CTSDK.framework'
-  #s.source_files = 'CTCocoaPods/Classes/**/*'
+  s.vendored_frameworks = 'CTCocoaPods/CTSDK.framework'
+  #s.source_files = 'CTCocoaPods/Frameworks/**/*'
   
   # s.resource_bundles = {
   #   'CTCocoaPods' => ['CTCocoaPods/Assets/*.png']
