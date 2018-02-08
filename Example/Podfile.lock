@@ -1,0 +1,16 @@
+PODS:
+  - CTCocoaPods (0.1.0)
+
+DEPENDENCIES:
+  - CTCocoaPods (from `../`)
+
+EXTERNAL SOURCES:
+  CTCocoaPods:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CTCocoaPods: 3ad4995fc98c1b57279b8255c3e36d3add9b3368
+
+PODFILE CHECKSUM: 570707e0e5161a11079efbabeb58bbac6341e973
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module CTCocoaPods {
+  umbrella header "CTCocoaPods-umbrella.h"
+
+  export *
+  module * { export * }
+}
