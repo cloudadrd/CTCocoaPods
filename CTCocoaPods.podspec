@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'CTCocoaPods'
+  s.name             = 'CTSDK'
   s.version          = '2.6.0'
   s.summary          = 'CTSDK'
 
@@ -25,12 +25,12 @@ Support CocoaPods
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tianwenshi' => 'lancelot.tian@yeahmobi.com' }
-  s.source           = { :git => 'https://github.com/tianwenshi/CTCocoaPods.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cloudadrd/CTCocoaPods', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'CTCocoaPods/Classes/**/*'
+  s.ios.deployment_target = '7.0'
+  s.vendored_frameworks = 'testCTPod/Frameworks/CTSDK.framework'
+  #s.source_files = 'CTCocoaPods/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CTCocoaPods' => ['CTCocoaPods/Assets/*.png']
