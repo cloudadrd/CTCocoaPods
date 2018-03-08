@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CTSDK'
-  s.version          = '2.6.1'
+  s.version          = '2.6.4'
   s.summary          = 'CTSDK'
 
 # This description is used to generate tags and improve search results.
