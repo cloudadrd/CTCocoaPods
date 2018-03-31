@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CTElementModel.h"
+#import "CTNativeVideoModel.h"
 
 typedef enum : NSUInteger {
     CTImageWHRateOneToOne= 0,           //Width:Hight  = 1:1
@@ -285,6 +286,22 @@ typedef enum : NSUInteger {
 - (NSString*)getSDKVersion;
 
 
+#pragma mark - Native Video Ad Interface
+/**
+ Get Native video Ad
+ Call this interface to get Native Video AD.
+ 
+ @param slot_id         Cloud Tech AD ID
+ @param delegate        Set Delegate of Ads event (<CTNativeVideoDelegate>)
+ @param WHRate          Set Image Rate
+ @param isTest          Use test advertisement or not
+ */
+- (void)getNativeVideoADswithSlotId:(NSString*)slot_id
+                           delegate:(id)delegate
+                imageWidthHightRate:(CTImageWidthHightRate)WHRate
+                             isTest:(BOOL)isTest;
+
+- (BOOL)isWifi;
 @end
 
 

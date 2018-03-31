@@ -20,21 +20,33 @@
 		<data>
 		zSAbiGZcBDumZkhIQTesPsNv85M=
 		</data>
+		<key>Headers/CTNativeVideoDelegate.h</key>
+		<data>
+		9TZlqswIAkrsoSF6dcZxyqjU/bo=
+		</data>
+		<key>Headers/CTNativeVideoModel.h</key>
+		<data>
+		sxVEhRPB5tfz6mgiRI7MyVbnGzU=
+		</data>
 		<key>Headers/CTRewardVideoDelegate.h</key>
 		<data>
 		ld2ekU6/nP0P8ENLpFJHnD2oZ8s=
 		</data>
 		<key>Headers/CTSDK.h</key>
 		<data>
-		Mg53HRrZAIGDqn+/Mn43kvT0JYw=
+		XNDsptufY6/EYW2lYUUNa4GnJoc=
 		</data>
 		<key>Headers/CTService.h</key>
 		<data>
-		Se5ggMMOl4Ht5WrXR3VkeUz7WrA=
+		NXWsXFNwPU2NJ3V4jZKNCKkomrs=
+		</data>
+		<key>Headers/CTVideoViewController.h</key>
+		<data>
+		YGuUhL049SGyhpJN7GJjf1o5tcY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BLJmopxWTRnRnul5HIejizXozbE=
+		SOfz/H49JuFtaTLosomNAqwx2Q4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,6 +99,28 @@
 			diRA3JW+v2luvyndW9uavxFIesldg5BqbMWmZm3CSZ4=
 			</data>
 		</dict>
+		<key>Headers/CTNativeVideoDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9TZlqswIAkrsoSF6dcZxyqjU/bo=
+			</data>
+			<key>hash2</key>
+			<data>
+			nnBym7OVrCV9tcQx9ivbIfWSmIH1G5LklNfPeV1ZhSw=
+			</data>
+		</dict>
+		<key>Headers/CTNativeVideoModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sxVEhRPB5tfz6mgiRI7MyVbnGzU=
+			</data>
+			<key>hash2</key>
+			<data>
+			oTYFMj7gu3hWIqDLV2yT/AyJ9NaCMNwKbbn6sw/ZPUI=
+			</data>
+		</dict>
 		<key>Headers/CTRewardVideoDelegate.h</key>
 		<dict>
 			<key>hash</key>
@@ -102,22 +136,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mg53HRrZAIGDqn+/Mn43kvT0JYw=
+			XNDsptufY6/EYW2lYUUNa4GnJoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GtJBVnNfaKoszoQwbfCEawoYpIRe3DVXkzBWVeGq1rA=
+			btVuFts/lqbNFavmVZSMvuth3IU9q7HU/3a5GfnJfTw=
 			</data>
 		</dict>
 		<key>Headers/CTService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Se5ggMMOl4Ht5WrXR3VkeUz7WrA=
+			NXWsXFNwPU2NJ3V4jZKNCKkomrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			RKY2wF/VimUGo1VnAk+fOrqlNUOL8QTuloR/LW+zJOo=
+			XiLdOqyLpNqwFEJEYMMAeDoX48LQ9iTKkyFKlUsCW80=
+			</data>
+		</dict>
+		<key>Headers/CTVideoViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YGuUhL049SGyhpJN7GJjf1o5tcY=
+			</data>
+			<key>hash2</key>
+			<data>
+			xiX0FHgF4w1XGzjzGUga9cm2Jayxs2CGtJqxT8MjMa4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

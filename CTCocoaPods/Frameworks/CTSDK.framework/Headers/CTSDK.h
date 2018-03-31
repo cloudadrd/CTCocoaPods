@@ -13,6 +13,10 @@
 #import <CTSDK/CTNativeAd.h>
 #import <CTSDK/CTNativeModelDelegate.h>
 #import <CTSDK/CTRewardVideoDelegate.h>
+#import <CTSDK/CTNativeVideoModel.h>
+#import <CTSDK/CTNativeVideoDelegate.h>
+#import <CTSDK/CTVideoViewController.h>
+
 //! Project version number for CTSDK.
 FOUNDATION_EXPORT double CTSDKVersionNumber;
 
