@@ -302,6 +302,37 @@ typedef enum : NSUInteger {
                              isTest:(BOOL)isTest;
 
 - (BOOL)isWifi;
+
+#pragma mark -  New Interstitial Ad Interface
+/**
+ Preload Interstitial Ad
+ Call this interface preload Interstitial AD.
+ 
+ @param slot_id         Cloud Tech AD ID
+ @param delegate        Set Delegate of Ads event (<CTADInterstitialDelegate>)
+ @param isTest          Use test advertisement or not
+ */
+- (void)preloadInterstitialAdWithSlotId:(NSString *)slot_id
+                             delegate:(id)delegate
+                               isTest:(BOOL)isTest;
+
+/**
+ Show interstitial ad
+ Call this method after preload Interstitial ad success
+ */
+- (void)interstitialAdShow;
+
+/**
+ Show interstitial ad with user vc present
+ Call this method after preload Interstitial ad success
+ */
+- (void)interstitialAdShowWithController:(UIViewController *)VC;
+
+/**
+ Check interstitial ad to be Ready
+ Call this method before show ad
+ */
+- (BOOL)interstitialAdIsReady;
 @end
 
 
