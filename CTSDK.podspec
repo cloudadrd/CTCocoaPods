@@ -30,7 +30,7 @@ CTSDK Support CocoaPods
 
   s.ios.deployment_target = '7.0'
   s.vendored_frameworks = 'CTCocoaPods/Frameworks/CTSDK.framework'
-  s.ios.library = 'z.tbd'
+  s.ios.library = 'z'
   #s.source_files = 'CTCocoaPods/Classes/**/*'
   
   # s.resource_bundles = {
