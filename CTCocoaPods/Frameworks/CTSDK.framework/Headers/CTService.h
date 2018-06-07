@@ -30,6 +30,16 @@ typedef enum : NSUInteger {
  */
 - (void)loadRequestGetCTSDKConfigBySlot_id:(NSString *)slot_id;
 
+/**
+ For GDPR
+
+ @param consentValue  yes/no/other
+ @param consentType   content type is the agreement name you signed with users
+ @param complete      state
+ */
+- (void)uploadConsentValue:(NSString *)consentValue
+               consentType:(NSString *)consentType
+                  complete:(void(^)(BOOL state))complete;
 
 #pragma mark - Native Ad Interface（Return Ad Elements）
 /**
@@ -134,50 +144,7 @@ typedef enum : NSUInteger {
                        success:(void (^)(UIView *bannerView))success
                        failure:(void (^)(NSError *error))failure;
 
-
-#pragma mark - Interstitial Ad interface
-/**
- Preload Interstitial, Get Interstitial Ad View
-
- @param slot_id         Cloud Tech Intersitital AD ID
- @param delegate        Set Delegate of Ad event(<CTInterstitialDelegate>)
- @param isFull          If is Screen，set Yes,else set No
- @param isTest          Use test advertisement or not
- @param success         The request is successful Block, return Interstitial Ad View
- @param failure         The request failed Block, retuen error
- */
-- (void)preloadInterstitialWithSlotId:(NSString *)slot_id
-                             delegate:(id)delegate
-                         isFullScreen:(BOOL)isFull
-                               isTest:(BOOL)isTest
-                              success:(void (^)(UIView *InterstitialView))success
-                              failure:(void (^)(NSError *error))failure;
-
-/**
- Interstitial Show
- */
-- (BOOL)interstitialShow;
-
-/**
- Interstitial Close
-  */
-- (BOOL)interstitialClose;
-
-/**
- Interstitial Screen Direction
- If you use interstitialShow,you can use this method Support the relation screen
- */
-- (void)ScreenIsVerticalScreen:(BOOL)isVerticalScreen;
-
-/**
- Interstitial Show With Controller Style
- Show interstitial advertisement by present VC stryle
-  */
-- (BOOL)interstitialShowWithControllerStyleFromRootViewController:(UIViewController *)rootViewController;
-- (BOOL)interstitialShowWithControllerStyle;//deprecated
-
-
-#pragma mark - Native AD Interface
+#pragma mark - NativeTemplate AD Interface
 /**
  Get NaTemplate Ad View
 
@@ -334,5 +301,3 @@ typedef enum : NSUInteger {
  */
 - (BOOL)interstitialAdIsReady;
 @end
-
-
