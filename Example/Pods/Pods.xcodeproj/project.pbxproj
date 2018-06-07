@@ -12,6 +12,7 @@
 		790EA5B020AC2AE72E1804CF28FF9B4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7D5CE59DFB011AF9CA8656F055D2A245 /* CTCocoaPods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D82329BFE78B63064572B7753E370FC /* CTCocoaPods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AB2677B1A0AC076BAD9D299D0330AA4 /* CTCocoaPods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67237AF09934A0FA35CA3481DD21E3C8 /* CTCocoaPods-dummy.m */; };
+		C79FCB6220C8D992007C4629 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C79FCB6120C8D992007C4629 /* libz.tbd */; };
 		C7F5F640202C2B83009990EE /* CTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5F63F202C2B83009990EE /* CTSDK.framework */; };
 		F96A33D75A10BD3379FDB0C4D3B96BE7 /* Pods-CTCocoaPods_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8576370C06C1291F11A39AD94A96369C /* Pods-CTCocoaPods_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		ABF4D495FB96AC3A611B99572EDBC2EF /* CTCocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CTCocoaPods.modulemap; sourceTree = "<group>"; };
 		C0B22B7A54D8B73E57472877FAC4F210 /* Pods-CTCocoaPods_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTCocoaPods_Tests-resources.sh"; sourceTree = "<group>"; };
 		C764A737206FE00400D0C5A0 /* CTSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CTSDK.podspec; sourceTree = "<group>"; };
+		C79FCB6120C8D992007C4629 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		C7F5F63F202C2B83009990EE /* CTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTSDK.framework; sourceTree = "<group>"; };
 		DE8BF0C4E6AB9B99DD03C970881234BB /* CTCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BD0E5DF153663D9EEF0AEB7C95BF1B /* Pods_CTCocoaPods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTCocoaPods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79FCB6220C8D992007C4629 /* libz.tbd in Frameworks */,
 				C7F5F640202C2B83009990EE /* CTSDK.framework in Frameworks */,
 				790EA5B020AC2AE72E1804CF28FF9B4B /* Foundation.framework in Frameworks */,
 			);
@@ -134,6 +137,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C79FCB6120C8D992007C4629 /* libz.tbd */,
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
