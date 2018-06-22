@@ -7,11 +7,18 @@
 #import <UIKit/UIKit.h>
 #import "CTElementModel.h"
 #import "CTNativeVideoModel.h"
+#import "CTADMRAIDView.h"
 
 typedef enum : NSUInteger {
     CTImageWHRateOneToOne= 0,           //Width:Hight  = 1:1
     CTImageWHRateOnePointNineToOne      //Width:Hight  = 1.9:1
 } CTImageWidthHightRate;
+
+typedef enum : NSUInteger {
+    CTADBannerSizeW320H50= 0,      //Width = 320  Hight = 50
+    CTADBannerSizeW320H100,        //Width = 320  Hight = 100
+    CTADBannerSizeW300H250         //Width = 300  Hight = 250
+} CTADBannerSize;
 
 @interface CTService : NSObject
 
@@ -129,45 +136,13 @@ typedef enum : NSUInteger {
  Get Banner Ad View
  
  @param slot_id         Cloud Tech Banner AD ID
- @param delegate        Set Delegate of Ad event(<CTBannerDelegate>)
- @param frame           Set Ad Frame
- @param isNeedBtn       show close button at the top-right corner of the advertisement
+ @param delegate        Set Delegate of Ad event(<CTAdViewDelegate>)
+ @param adSize          requre Ad Size
+ @param containerView   the view which shows ads on
  @param isTest          Use test advertisement or not
- @param success         The request is successful Block, return Banner Ad View
- @param failure         The request failed Block, retuen error
  */
-- (void)getBannerADswithSlotId:(NSString *)slot_id
-                      delegate:(id)delegate
-                         frame:(CGRect)frame
-               needCloseButton:(BOOL)isNeedBtn
-                        isTest:(BOOL)isTest
-                       success:(void (^)(UIView *bannerView))success
-                       failure:(void (^)(NSError *error))failure;
+- (void)getMRAIDBannerAdWithSlot:(NSString*)slotid delegate:(id)delegate adSize:(CTADBannerSize)size container:(UIView*)containerView isTest:(BOOL)isTest;
 
-#pragma mark - NativeTemplate AD Interface
-/**
- Get NaTemplate Ad View
-
- @param slot_id         Cloud Tech Native AD ID
- @param delegate        Set Delegate of Ad event(<CTNaTemplateDelegate>)
- @param frame           Set Ad Frame
- @param isNeedBtn       show close button at the top-right corner of the advertisement
- @param isTest          Use test advertisement or not
- @param success         The request is successful Block, return Native Ad View
- @param failure         The request failed Block, retuen error
- */
-- (void)getNaTemplateADswithSlotId:(NSString *)slot_id
-                          delegate:(id)delegate
-                             frame:(CGRect)frame
-                   needCloseButton:(BOOL)isNeedBtn
-                            isTest:(BOOL)isTest
-                           success:(void (^)(UIView *NaTemplateView))success
-                           failure:(void (^)(NSError *error))failure;
-
-/**
- Remove Banner,Interstitial,Natemplate Ads click waiting loading animation.
- */
-- (void)removeAllTemplateWaitingLoadingAnimation;
 
 #pragma mark - AppWall Ad Interface
 /**
@@ -276,28 +251,20 @@ typedef enum : NSUInteger {
  Call this interface preload Interstitial AD.
  
  @param slot_id         Cloud Tech AD ID
- @param delegate        Set Delegate of Ads event (<CTADInterstitialDelegate>)
+ @param delegate        Set Delegate of Ads event (<CTAdViewDelegate>)
  @param isTest          Use test advertisement or not
  */
-- (void)preloadInterstitialAdWithSlotId:(NSString *)slot_id
-                             delegate:(id)delegate
-                               isTest:(BOOL)isTest;
+- (void)preloadMRAIDInterstitialAdWithSlotId:(NSString *)slotid delegate:(id)delegate isTest:(BOOL)isTest;
 
 /**
  Show interstitial ad
  Call this method after preload Interstitial ad success
  */
-- (void)interstitialAdShow;
-
-/**
- Show interstitial ad with user vc present
- Call this method after preload Interstitial ad success
- */
-- (void)interstitialAdShowWithController:(UIViewController *)VC;
+- (void)mraidInterstitialShow;
 
 /**
  Check interstitial ad to be Ready
  Call this method before show ad
  */
-- (BOOL)interstitialAdIsReady;
+- (BOOL)mraidInterstitialIsReady;
 @end
