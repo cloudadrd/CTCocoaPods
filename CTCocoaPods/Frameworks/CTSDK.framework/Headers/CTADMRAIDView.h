@@ -72,6 +72,9 @@ typedef enum
 //mraid ad clicked
 - (void)CTAdViewClicked:(CTADMRAIDView*)adView;
 
+//mraid ad show
+- (void)CTAdMaridAdShow:(CTADMRAIDView*)adView;
+
 //did click close button
 - (void)CTAdViewCloseButtonPressed:(CTADMRAIDView*)adView;
 
