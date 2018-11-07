@@ -47,7 +47,7 @@ typedef enum
  for "mraid.js" from a UIWebView.
  */
 - (void)unregisterProtocolClass;
-
+- (void)mraidInitializeBridge:(id)bridge forWebView:(id)wv;
 @end
 
 
