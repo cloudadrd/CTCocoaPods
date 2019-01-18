@@ -31,6 +31,10 @@ typedef enum : NSUInteger {
 + (instancetype)shareManager;
 
 /**
+ Set using https request
+ */
+- (void)setSchemaHttps;
+/**
  Get CT AD Config in Appdelegate(didFinishLaunchingWithOptions:)
 
  @param slot_id Ad
